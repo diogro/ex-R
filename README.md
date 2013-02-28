@@ -10,3 +10,5 @@ Problemas
 4. Ex 3.4: Ordem da segunda tabela importa
 
 5. Ex 3.5: Item III. não é conferido, alem de ser mais facil fazer isso no mean.iris3
+
+6. Ex 3.6: Não funciona com tapply, só aggregate
