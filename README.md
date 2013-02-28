@@ -12,3 +12,5 @@ Problemas
 5. Ex. 3.5: Item III. não é conferido, alem de ser mais facil fazer isso no mean.iris3
 
 6. Ex. 3.6: Não funciona com tapply, só aggregate
+
+7. Ex. 6.1: simula.r linkada ainda não funciona com a correação atual
