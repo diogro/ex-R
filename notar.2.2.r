@@ -1,0 +1,5 @@
+letra.a = rep("a", 6)
+numeros = rep(1:3, each =3)
+decrescente = rep(1:3, 3:1)
+sequencia = c(1:5,4:1)
+impares = seq(1,99,2)
