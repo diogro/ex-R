@@ -16,5 +16,3 @@ Problemas
 7. Ex. 6.1: simula.r linkada ainda não funciona com a correação atual
 
 8. Ex. 6.2: - Primeira questão não parece fazer sentido, o cap é por fuste? Ou total? Pq eu usaria aggregate?
-
-            - 
