@@ -1,0 +1,5 @@
+altura.2.anos = c(39, 30, 32, 34, 35, 36, 36, 30)
+altura.adulto = c(71, 63, 63, 67, 68, 68, 70, 64)
+alturas = data.frame(dois.anos = altura.2.anos, adulto = altura.adulto)
+alturas.lm = lm(adulto~dois.anos, data=alturas)
+alturas.conf = confint(alturas.lm)
