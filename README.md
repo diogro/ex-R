@@ -14,3 +14,5 @@ Problemas
 6. Ex. 3.6: Não funciona com tapply, só aggregate
 
 7. ~~Ex. 6.1: simula.r linkada ainda não funciona com a correação atual~~
+
+8. Ex. 6.2: Não roda. Suspeito do arquivo de entrada mais sei la.
