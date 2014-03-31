@@ -1,3 +1,7 @@
 *rdata
 *txt
 *csv
+.Rproj.user
+.Rhistory
+.Rproj.user/*
+notaR.Rproj
