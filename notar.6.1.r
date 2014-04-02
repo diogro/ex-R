@@ -1,6 +1,6 @@
 conj1 = rnorm(10, 6, 3)
 conj2 = rnorm(10, 7.5, 3.2)
-source("http://ecologia.ib.usp.br/bie5782/lib/exe/fetch.php?media=bie5782:02_tutoriais:tutorial6:simula.r")
+source("simula.r")
 sim.dif = simula(conj2, conj1, teste="bi")
 sim.maior = simula(conj2, conj1, teste="uni")
 t.dif = t.test(conj1, conj2)
