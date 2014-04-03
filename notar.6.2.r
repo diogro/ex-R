@@ -18,4 +18,4 @@ d_intra = ss.intra/gl_intra
 d_entre = ss.entre/gl_entre
 razao = d_entre/d_intra
 prob = pf(razao, gl_entre, gl_intra, lower.tail = FALSE)
-porc = 100* ss.intra/ss.total
+porc = 100* ss.entre/ss.total
