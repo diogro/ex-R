@@ -1,0 +1,10 @@
+dap = runif(100, 10, 80)
+especies = factor(rep(paste0("especie", 1:10), 10))
+biomassa = exp(-1.7953) * dap^(2.2974)
+altura = exp(log(biomassa) + 2.6464 - 1.9960*log(dap))
+dados = data.frame(dap, biomassa, altura, especies)
+rownames(dados) = paste0("ind", 1:100)
+dados.decr = dados[order(dados$dap, decreasing = TRUE),]
+dap50 = sum(dados$dap <= 50)
+dap50.60 = sum(dados$dap >= 50 & dados$dap <= 60)
+dap30.70 = sum(dados$dap <= 30 | dados$dap >= 70)
