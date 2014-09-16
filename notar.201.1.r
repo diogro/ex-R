@@ -1,29 +1,14 @@
-X <- as.numeric(runif(10, pX <- 0.5))
-Y <- as.numeric(runif(10, pY <- 0.1))
+X <- seq(0, 10)
+Y <- seq(0, 10)
 
-esperanca <- function(x) {
-    n <- length(x)
-    sum_x <- 0
-    for(i in 1:n)
-        sum_x <- sum_x + x[i]
-    sum_x/n
-}
+pX <- dbinom(X, 10, 0.5)
+pY <- dbinom(Y, 10, 0.1)
 
-variancia <- function(x){
-  M <- 0
-  S <- 0
-  n <- length(x)
-  for (i in 1:n){
-    current_x <- x[i]
-    oldM <- M
-    M <- M + (current_x - M)/i
-    S <- S + (current_x - M) * (current_x - oldM)
-  }
-  S/(n-1)
-}
+esperanca <- function(x, px) sum(px * x)
+variancia <- function(x, px) sum(px * ((x - esperanca(x, px)) * (x - esperanca(x, px))))
 
-espX <- esperanca(X)
-espY <- esperanca(Y)
+espX <- esperanca(X, pX)
+espY <- esperanca(Y, pY)
 
-varX <- variancia(X)
-varY <- variancia(Y)
+varX <- variancia(X, pX)
+varY <- variancia(Y, pY)
